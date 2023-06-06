@@ -6,7 +6,7 @@ const inputField = document.getElementById('input');
 const card = document.getElementById('card');
 
 searchBtn.addEventListener("click", (event) => {
-    let name = inputField.value;
+    let name = inputField.value.toLowerCase();
     async function getPokemon() 
     {
         const url = `https://pokeapi.co/api/v2/pokemon/${name}`;
